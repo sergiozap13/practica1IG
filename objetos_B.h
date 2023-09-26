@@ -80,7 +80,7 @@ class _rombo3D: public _triangulos3D
 {
 public:
 
-	_rombo3D(float tam=0.5, float al=1.0);
+	_rombo3D(float tam=0.5, float al=1.0, float desp=3); // desp: desplazamiento con respecto al origen (0,0,0)
 };
 
 

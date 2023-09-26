@@ -28,9 +28,9 @@
 
 
     _piramide piramide(0.5,1.5);
-    _cubo cubo(0.8);
+    _cubo cubo(0.5);
     _puntos3D puntos;
-    _rombo3D rombo(0.8,1.2);
+    _rombo3D rombo(0.5,0.8,1.5);
 
 //**************************************************************************
 //
@@ -104,6 +104,9 @@ void draw_objects()
 {
     cubo.draw_aristas(0,0,0,2);
     cubo.asignar_gama_colores();
+    rombo.draw_puntos(0,0,0,5);
+    rombo.draw_aristas(0,0,0,1);
+    rombo.asignar_gama_colores();
 }
 
 //**************************************************************************
@@ -192,7 +195,7 @@ void initialize(void)
     Back_plane=1000;
 
     // se inicia la posicion del observador, en el eje z
-    Observer_distance=3*Front_plane;
+    Observer_distance=5*Front_plane;
     Observer_angle_x=0;
     Observer_angle_y=0;
 
